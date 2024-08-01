@@ -15,7 +15,9 @@
   --BG-COLOR-DARK: #1f2937;
   --FONT-COLOR-1: #f9faf8;
   --FONT-COLOR-2: #e5e7eb;
+  --FONT-COLOR-3: #1F2937;
   --BUTTON-BG-COLOR: #3882f6;
+  --BORDER: 4px solid #3882f6;
 }
 
 body {
@@ -62,6 +64,7 @@ body {
 #hero h1 {
   font-size: 48px;
   color: var(--FONT-COLOR-1);
+  font-weight: 800;
 }
 
 #hero p {
@@ -95,4 +98,39 @@ body {
   align-items: center;
   margin-right: var(--HERO-MARGIN);
   color: var(--FONT-COLOR-1);
+}
+
+.information {
+  height: 400px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px; 
+}
+
+.information h2 {
+  margin-top: 32px;
+  font-size: 36px;
+  font-weight:800;
+  color: var(--FONT-COLOR-3);
+}
+
+.information__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.img-container {
+  width: 150px;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  border: var(--BORDER);
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
