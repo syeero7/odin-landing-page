@@ -1,4 +1,98 @@
-* {
-    padding: 0;
-    margin: 0;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --FF: "Roboto", sans-serif;
+  --FS-SMALL: 18px;
+
+  --HERO-MARGIN: 18rem;
+
+  --BG-COLOR-DARK: #1f2937;
+  --FONT-COLOR-1: #f9faf8;
+  --FONT-COLOR-2: #e5e7eb;
+  --BUTTON-BG-COLOR: #3882f6;
+}
+
+body {
+  font-family: var(--FF);
+}
+
+#header {
+  background-color: var(--BG-COLOR-DARK);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-right: var(--HERO-MARGIN);
+}
+
+#logo {
+  font-size: 24px;
+  color: var(--FONT-COLOR-1);
+  margin-left: var(--HERO-MARGIN);
+}
+
+#header a {
+  font-size: var(--FS-SMALL);
+  color: var(--FONT-COLOR-2);
+}
+
+#header a {
+  text-decoration: none;
+}
+
+#hero {
+  background-color: var(--BG-COLOR-DARK);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+
+#hero h1 {
+  font-size: 48px;
+  color: var(--FONT-COLOR-1);
+}
+
+#hero p {
+  color: var(--FONT-COLOR-2);
+}
+
+.button {
+  background-color: var(--BUTTON-BG-COLOR);
+  color: var(--FONT-COLOR-1);
+  padding: 8px 24px;
+  border-radius: 12px;
+  font-size: var(--FS-SMALL);
+}
+
+#hero .button {
+  border: none;
+  margin-top: 12px;
+}
+
+.hero__content {
+  width: 400px;
+  margin-left: var(--HERO-MARGIN);
+}
+
+.placeholder-img {
+  height: 225px;
+  width: 500px;
+  background: #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: var(--HERO-MARGIN);
+  color: var(--FONT-COLOR-1);
 }
