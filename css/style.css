@@ -9,10 +9,12 @@
 :root {
   --FF: "Roboto", sans-serif;
   --FS-SMALL: 18px;
+  --FS-MEDIUM: 36px;
 
   --HERO-MARGIN: 18rem;
 
   --BG-COLOR-DARK: #1f2937;
+  --BG-COLOR-2: #e5e7eb;
   --FONT-COLOR-1: #f9faf8;
   --FONT-COLOR-2: #e5e7eb;
   --FONT-COLOR-3: #1F2937;
@@ -111,7 +113,7 @@ body {
 
 .information h2 {
   margin-top: 32px;
-  font-size: 36px;
+  font-size: var(--FS-MEDIUM);
   font-weight:800;
   color: var(--FONT-COLOR-3);
 }
@@ -133,4 +135,29 @@ body {
   border: var(--BORDER);
   border-radius: 10px;
   margin-bottom: 5px;
+}
+
+#quote {
+  height: 250px;
+  background-color: var(--BG-COLOR-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container {
+  width: 800px;
+}
+
+.quote {
+  font-size: var(--FS-MEDIUM);
+  font-style: italic;
+  font-weight: 300;
+  text-align: left;
+}
+
+.quote-container p:last-child {
+  display: flex;
+  justify-content: flex-end;
 }
