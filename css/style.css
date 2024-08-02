@@ -15,6 +15,7 @@
 
   --BG-COLOR-DARK: #1f2937;
   --BG-COLOR-2: #e5e7eb;
+  --BG-COLOR-3: #3882f6;
   --FONT-COLOR-1: #f9faf8;
   --FONT-COLOR-2: #e5e7eb;
   --FONT-COLOR-3: #1F2937;
@@ -160,4 +161,28 @@ body {
 .quote-container p:last-child {
   display: flex;
   justify-content: flex-end;
+}
+
+#cta {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--BG-COLOR-3);
+  gap: 10px;
+  padding: 50px 100px;
+  border-radius: 10px;
+  gap: 200px;
+  color: var(--FONT-COLOR-1);
+}
+
+.cta .button {
+  border: none;
+  outline: 2px solid #f9faf8;
 }
